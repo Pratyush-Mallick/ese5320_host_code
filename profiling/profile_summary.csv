@@ -1,0 +1,157 @@
+Profile Summary
+Generated on: 2021-04-28 05:43:57
+Msec since Epoch: 1619588637930
+Target platform: 
+Tool version: 2020.2
+XRT build version: 2.8.0
+Build version branch: 2020.2
+Build version hash: f19a872233fbfe2eb933f25fa3d9a780ced774e5
+Build version date: N/A 
+Target devices: edge-0
+Flow mode: System Run
+
+OpenCL API Calls
+API Name,Number Of Calls,Total Time (ms),Minimum Time (ms),Average Time (ms),Maximum Time (ms),
+clCreateProgramWithBinary,1,82.0222,82.0222,82.0222,82.0222,
+clCreateContext,1,12.0943,12.0943,12.0943,12.0943,
+clReleaseProgram,1,9.37707,9.37707,9.37707,9.37707,
+clEnqueueMigrateMemObjects,34,6.51428,0.08646,0.191596,0.9565,
+clEnqueueTask,17,6.4069,0.26192,0.376876,0.62387,
+clCreateKernel,1,4.2,4.2,4.2,4.2,
+clReleaseEvent,102,3.82039,0.02014,0.0374548,0.15133,
+clRetainMemObject,102,2.62192,0.02082,0.0257051,0.10438,
+clReleaseMemObject,105,2.57665,0.02074,0.0245395,0.07481,
+clRetainEvent,51,1.1151,0.02027,0.0218647,0.06726,
+clEnqueueMapBuffer,3,0.69099,0.06013,0.23033,0.56601,
+clWaitForEvents,17,0.61878,0.02086,0.0363988,0.2287,
+clSetKernelArg,23,0.57625,0.02107,0.0250543,0.03748,
+clCreateBuffer,3,0.54631,0.04945,0.182103,0.4122,
+clFinish,17,0.36048,0.02037,0.0212047,0.02473,
+clReleaseKernel,1,0.26382,0.26382,0.26382,0.26382,
+clReleaseContext,1,0.16752,0.16752,0.16752,0.16752,
+clGetPlatformIDs,2,0.16358,0.02567,0.08179,0.13791,
+clCreateCommandQueue,1,0.05486,0.05486,0.05486,0.05486,
+clGetDeviceIDs,2,0.05377,0.02131,0.026885,0.03246,
+clRetainDevice,2,0.04981,0.02083,0.024905,0.02898,
+clGetPlatformInfo,2,0.04865,0.02179,0.024325,0.02686,
+clReleaseDevice,2,0.0468,0.02141,0.0234,0.02539,
+clReleaseCommandQueue,1,0.03483,0.03483,0.03483,0.03483,
+
+
+Kernel Execution
+Kernel,Number Of Enqueues,Total Time (ms),Minimum Time (ms),Average Time (ms),Maximum Time (ms),
+hardware_encoding,17,8.08378,0.28951,0.475516,0.84415,
+
+
+Compute Unit Utilization
+Device,Compute Unit,Kernel,Global Work Size,Local Work Size,Number Of Calls,Dataflow Execution,Max Overlapping Executions,Dataflow Acceleration,Total Time (ms),Minimum Time (ms),Average Time (ms),Maximum Time (ms),Clock Frequency (MHz),
+
+
+Data Transfer: Host to Global Memory
+Context:Number of Devices,Transfer Type,Number Of Buffer Transfers,Transfer Rate (MB/s),Average Bandwidth Utilization (%),Average Buffer Size (KB),Total Time (ms),Average Time (ms),
+context0:1,READ,17,553.284208,5.763377,32.772,1.006940,0.059232,
+context0:1,WRITE,17,123.660516,1.288130,8.192,1.126180,0.066246,
+
+
+Data Transfer: Kernels to Global Memory
+Device,Compute Unit/Port Name,Kernel Arguments,Memory Resources,Transfer Type,Number Of Transfers,Transfer Rate (MB/s),Average Bandwidth Utilization (%),Average Size (KB),Average Latency (ns),
+
+
+Top Data Transfer: Kernels to Global Memory
+Device,Compute Unit,Number of Transfers,Average Bytes per Transfer,Transfer Efficiency (%),Total Data Transfer (MB),Total Write (MB),Total Read (MB),Total Transfer Rate (MB/s),
+
+
+Top Kernel Execution
+Kernel Instance Address,Kernel,Context ID,Command Queue ID,Device,Start Time (ms),Duration (ms),Global Work Size,Local Work Size,
+187650677009472,hardware_encoding,0,0,edge-0,172.602,0.84415,1:1:1,1:1:1,
+187650677009472,hardware_encoding,0,0,edge-0,150.387,0.82387,1:1:1,1:1:1,
+187650677009472,hardware_encoding,0,0,edge-0,136.727,0.73492,1:1:1,1:1:1,
+187650677009472,hardware_encoding,0,0,edge-0,143.346,0.58213,1:1:1,1:1:1,
+187650677009472,hardware_encoding,0,0,edge-0,156.005,0.52138,1:1:1,1:1:1,
+187650677009472,hardware_encoding,0,0,edge-0,165.245,0.48486,1:1:1,1:1:1,
+187650677009472,hardware_encoding,0,0,edge-0,139.23,0.47382,1:1:1,1:1:1,
+187650677009472,hardware_encoding,0,0,edge-0,147.957,0.44372,1:1:1,1:1:1,
+187650677009472,hardware_encoding,0,0,edge-0,175.596,0.43158,1:1:1,1:1:1,
+187650677009472,hardware_encoding,0,0,edge-0,167.824,0.42236,1:1:1,1:1:1,
+
+
+Top Memory Writes: Host to Global Memory
+Buffer Address,Context ID,Command Queue ID,Start Time (ms),Duration (ms),Buffer Size (KB),Writing Rate(MB/s),
+1119232000,0,0,167.122,0.141920,8.192,57.722661,
+1119232000,0,0,136.052,0.126270,8.192,64.876851,
+1119232000,0,0,164.632,0.067620,8.192,121.147589,
+1119232000,0,0,138.755,0.066600,8.192,123.003003,
+1119232000,0,0,145.362,0.058590,8.192,139.819082,
+1119232000,0,0,169.64,0.056160,8.192,145.868946,
+1119232000,0,0,174.943,0.056120,8.192,145.972915,
+1119232000,0,0,155.457,0.055740,8.192,146.968066,
+1119232000,0,0,149.867,0.055640,8.192,147.232207,
+1119232000,0,0,140.946,0.055630,8.192,147.258673,
+
+
+Top Memory Reads: Host to Global Memory
+Buffer Address,Context ID,Command Queue ID,Start Time (ms),Duration (ms),Buffer Size (KB),Reading Rate(MB/s),
+1119277056,0,0,148.665,0.075870,32.772,431.949387,
+1119277056,0,0,173.609,0.067390,32.772,486.303606,
+1119277056,0,0,144.097,0.066380,32.772,493.702923,
+1119277056,0,0,139.998,0.063180,32.772,518.708452,
+1119277056,0,0,154.44,0.060890,32.772,538.216456,
+1119277056,0,0,176.442,0.060680,32.772,540.079103,
+1119277056,0,0,163.72,0.059710,32.772,548.852788,
+1119277056,0,0,171.018,0.059550,32.772,550.327456,
+1119277056,0,0,161.46,0.059490,32.772,550.882501,
+1119277056,0,0,165.956,0.059440,32.772,551.345895,
+
+
+Guidance Parameters
+Parameter,Element,Value,
+DEVICE_EXEC_TIME,edge-0,39.300850,
+CU_CALLS,edge-0|hardware_encoding_1,17,
+NUM_MONITORS,edge-0|XCL_PERF_MON_ACCEL|0,0,
+NUM_MONITORS,edge-0|XCL_PERF_MON_MEMORY|0,0,
+NUM_MONITORS,edge-0|XCL_PERF_MON_STR|0,0,
+MIGRATE_MEM,host,34,
+MEMORY_USAGE,edge-0|HP0,0,
+MEMORY_USAGE,edge-0|HP1,0,
+MEMORY_USAGE,edge-0|HP2,1,
+MEMORY_USAGE,edge-0|HP3,1,
+MEMORY_USAGE,edge-0|HPC0,0,
+MEMORY_USAGE,edge-0|HPC1,0,
+PLRAM_DEVICE,all,1,
+HBM_DEVICE,all,0,
+KDMA_DEVICE,all,0,
+P2P_DEVICE,all,0,
+P2P_HOST_TRANSFERS,host,0,
+PORT_BIT_WIDTH,hardware_encoding_1/m_axi_axismm1,32,
+PORT_BIT_WIDTH,hardware_encoding_1/m_axi_axismm2,32,
+KERNEL_COUNT,hardware_encoding,1,
+OBJECTS_RELEASED,all,1,
+TRACE_MEMORY,all,FIFO,
+CU_CONTEXT_EN,all,0,
+MAX_PARALLEL_KERNEL_ENQUEUES,hardware_encoding,1,
+COMMAND_QUEUE_OOO,187650676966896,0,
+KERNEL_BUFFER_INFO,hardware_encoding|out_size|HP2|1,4,
+KERNEL_BUFFER_INFO,hardware_encoding|output_buff|HP2|1,32768,
+KERNEL_BUFFER_INFO,hardware_encoding|s1|HP2|1,8192,
+MEMORY_TYPE_BIT_WIDTH,edge-0|DDR,512,
+MEMORY_TYPE_BIT_WIDTH,edge-0|HBM,256,
+MEMORY_TYPE_BIT_WIDTH,edge-0|PLRAM,512,
+XRT_INI_SETTING,aie_trace_buffer_size,8M,
+XRT_INI_SETTING,continuous_trace,0,
+XRT_INI_SETTING,continuous_trace_interval_ms,10,
+XRT_INI_SETTING,data_transfer_trace,coarse,
+XRT_INI_SETTING,launch_waveform,batch,
+XRT_INI_SETTING,lop_trace,0,
+XRT_INI_SETTING,power_profile,0,
+XRT_INI_SETTING,profile,1,
+XRT_INI_SETTING,stall_trace,all,
+XRT_INI_SETTING,timeline_trace,1,
+XRT_INI_SETTING,trace_buffer_size,4095M,
+XRT_INI_SETTING,verbosity,4,
+BUFFER_RD_ACTIVE_TIME_MS,all,1.00694,
+BUFFER_WR_ACTIVE_TIME_MS,all,1.12618,
+BUFFER_TX_ACTIVE_TIME_MS,all,40.4508,
+APPLICATION_RUN_TIME_MS,all,190.053,
+TOTAL_KERNEL_RUN_TIME_MS,all,39.3009,
+
+
